@@ -15,6 +15,14 @@ public class Health : MonoBehaviour
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
 
+    [Header("Components")]
+    [SerializeField] private Behaviour[] components;
+    private bool invulnerable;
+
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
+    [SerializeField] private AudioClip hurtSound;
+
     private void Awake()
     {
         currentHealth = startingHealth;
@@ -24,6 +32,7 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
+        if (invulnerable) return;
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0,startingHealth);
 
         if (currentHealth > 0)
@@ -32,12 +41,12 @@ public class Health : MonoBehaviour
             anim.SetTrigger("hurt");
             //iframes
             StartCoroutine(Invunerability());
+            SoundManager.instance.PlaySound(hurtSound);
         }
         else
         {
             if (!dead)
             {
-                anim.SetTrigger("die");
 
                 //Player
                 if(GetComponent<PlayerMovement>() != null)
@@ -49,7 +58,13 @@ public class Health : MonoBehaviour
 
                 if (GetComponent<MeleeEnemy>() != null)
                     GetComponent<MeleeEnemy>().enabled = false;
+
+                anim.SetBool("grounded", true);
+                anim.SetTrigger("die");
+
                 dead = true;
+
+                SoundManager.instance.PlaySound(deathSound);
             }
         }
     }
@@ -58,6 +73,26 @@ public class Health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
 
+    }
+
+    public void Respawn()
+    {
+        dead = false;
+        AddHealth(startingHealth);
+        anim.ResetTrigger("die");
+        anim.Play("Idle");
+        StartCoroutine(Invunerability());
+
+        //Player
+        if (GetComponent<PlayerMovement>() != null)
+            GetComponent<PlayerMovement>().enabled = true;
+
+        //Enemy
+        if (GetComponentInParent<EnemyPatrol>() != null)
+            GetComponentInParent<EnemyPatrol>().enabled = true;
+
+        if (GetComponent<MeleeEnemy>() != null)
+            GetComponent<MeleeEnemy>().enabled = true;
     }
 
     private IEnumerator Invunerability()
