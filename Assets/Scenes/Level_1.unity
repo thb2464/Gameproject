@@ -1518,10 +1518,6 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7294226265725971813, guid: 5f3a70a8678a0b34bb0fd6e0e8a9ee2d, type: 3}
-      propertyPath: damage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7294226265725971813, guid: 5f3a70a8678a0b34bb0fd6e0e8a9ee2d, type: 3}
       propertyPath: nextScene
       value: 
       objectReference: {fileID: 102900000, guid: abf6321ea43561545bea1f74601329b5, type: 3}
@@ -1543,8 +1539,16 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: cfb78b913095ece46ba81480ed20a768, type: 3}
     - target: {fileID: 9138835734394801492, guid: 5f3a70a8678a0b34bb0fd6e0e8a9ee2d, type: 3}
       propertyPath: startingHealth
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9138835734394801492, guid: 5f3a70a8678a0b34bb0fd6e0e8a9ee2d, type: 3}
+      propertyPath: components.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9138835734394801492, guid: 5f3a70a8678a0b34bb0fd6e0e8a9ee2d, type: 3}
+      propertyPath: components.Array.data[1]
+      value: 
+      objectReference: {fileID: 684507895}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8615,7 +8619,7 @@ Transform:
   m_GameObject: {fileID: 1024911339}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70713186, w: 0.7070817}
-  m_LocalPosition: {x: -7.26, y: -0.208, z: 0}
+  m_LocalPosition: {x: -7.08, y: -0.208, z: 0}
   m_LocalScale: {x: 10, y: 9.691999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

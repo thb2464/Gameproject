@@ -169,6 +169,10 @@ MonoBehaviour:
   startingHealth: 3
   iFramesDuration: 0
   numberOfFlashes: 0
+  components:
+  - {fileID: 7294226265725971813}
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
 --- !u!114 &7294226265725971813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,9 +187,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 2
   range: 1.7
-  colliderDistance: 0.45
   damage: 2
+  colliderDistance: 0.45
   boxCollider: {fileID: 1055058055594901208}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  attackSound: {fileID: 0}

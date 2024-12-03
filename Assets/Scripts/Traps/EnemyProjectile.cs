@@ -39,14 +39,21 @@ public class EnemyProjectile : EnemyDamage
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hit = true;
-        base.OnTriggerEnter2D(collision); //Execute logic from parent script first
-        coll.enabled = true;
-
-        if (anim != null)
-            anim.SetTrigger("explode");//when the object is fireball explode it
+        if(collision.tag == "Enemy")
+        {
+            hit = false;
+        }
         else
-            gameObject.SetActive(false);//when this hits any object deactivate
+        {
+            hit = true;
+            base.OnTriggerEnter2D(collision); //Execute logic from parent script first
+            coll.enabled = false;
+
+            if (anim != null)
+                anim.SetTrigger("explode");//when the object is fireball explode it
+            else
+                gameObject.SetActive(false);//when this hits any object deactivate
+        }
     }
 
     private void Deactivate()

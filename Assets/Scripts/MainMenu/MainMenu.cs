@@ -13,6 +13,10 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        Application.Quit(); //Quits the game (only works on build)
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false; //Exist play mode (will only be excuted in the editor)
+#endif
     }
 }

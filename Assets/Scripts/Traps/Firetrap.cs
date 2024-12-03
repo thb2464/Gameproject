@@ -16,6 +16,8 @@ public class Firetrap : MonoBehaviour
     private bool triggered;//when the trap get triggered
     private bool active;//when trap is active and can hurt the player
 
+    private Health playerHealth;
+
     [Header("SFX")]
     [SerializeField] private AudioClip firetrapSound;
 
@@ -25,10 +27,19 @@ public class Firetrap : MonoBehaviour
         spriteRend = GetComponent<SpriteRenderer>();
     }
 
+    private void Update()
+    {
+        if (playerHealth != null && active)
+        {
+            playerHealth.TakeDamage(damage);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
+            playerHealth = GetComponent<Health>();
             if (!triggered)
                 //trigger the firetrap
                 StartCoroutine(ActivateFiretrap());
@@ -36,6 +47,14 @@ public class Firetrap : MonoBehaviour
             if (active)
                 collision.GetComponent<Health>().TakeDamage(damage);
         }    
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            playerHealth = null;
+        }
     }
     private IEnumerator ActivateFiretrap()
     {

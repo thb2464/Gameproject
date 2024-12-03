@@ -48,20 +48,14 @@ public class Health : MonoBehaviour
             if (!dead)
             {
 
-                //Player
-                if(GetComponent<PlayerMovement>() != null)
-                    GetComponent<PlayerMovement>().enabled = false;
-
-                //Enemy
-                if (GetComponentInParent<EnemyPatrol>() != null)
-                    GetComponentInParent<EnemyPatrol>().enabled = false;
-
-                if (GetComponent<MeleeEnemy>() != null)
-                    GetComponent<MeleeEnemy>().enabled = false;
-
                 anim.SetBool("grounded", true);
                 anim.SetTrigger("die");
 
+                //Deactivate all attached components classes
+                foreach (Behaviour component in components)
+                {
+                    component.enabled = false;
+                }
                 dead = true;
 
                 SoundManager.instance.PlaySound(deathSound);
@@ -97,6 +91,7 @@ public class Health : MonoBehaviour
 
     private IEnumerator Invunerability()
     {
+        invulnerable = true;
         Physics2D.IgnoreLayerCollision(10, 11, true);
         //invunerability duration
         for (int i = 0; i < numberOfFlashes; i++) 
@@ -107,5 +102,11 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(10, 11, false);
+        invulnerable = false;
+    }
+
+    private void Deactivate()
+    {
+        gameObject.SetActive(false);
     }
 }
