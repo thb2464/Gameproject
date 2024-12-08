@@ -23,6 +23,7 @@ public class Health : MonoBehaviour
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip hurtSound;
 
+
     private void Awake()
     {
         currentHealth = startingHealth;
@@ -45,17 +46,18 @@ public class Health : MonoBehaviour
         }
         else
         {
+
             if (!dead)
             {
 
                 anim.SetBool("grounded", true);
                 anim.SetTrigger("die");
 
-                //Deactivate all attached components classes
-                foreach (Behaviour component in components)
-                {
-                    component.enabled = false;
-                }
+                //Player
+                if (GetComponent<PlayerMovement>() != null)
+                    GetComponent<PlayerMovement>().enabled = false;
+
+
                 dead = true;
 
                 SoundManager.instance.PlaySound(deathSound);

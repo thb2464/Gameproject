@@ -22,6 +22,7 @@ public class PlayerRespawn : MonoBehaviour
         {
             //Show game over screen
             uiManager.GameOver();
+            GameObject.Destroy(gameObject);
 
             return; //Don't execute the rest of this function
         }

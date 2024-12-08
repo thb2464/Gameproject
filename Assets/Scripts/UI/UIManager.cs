@@ -12,7 +12,6 @@ public class UIManager : MonoBehaviour
     [Header ("Pause")]
     [SerializeField] private GameObject pauseScreen;
 
-
     private void Awake()
     {
         gameOverScreen.SetActive(false);
@@ -40,10 +39,7 @@ public class UIManager : MonoBehaviour
     }
 
     //Game over functions
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
@@ -72,6 +68,16 @@ public class UIManager : MonoBehaviour
             Time.timeScale = 0;
         else
             Time.timeScale = 1;
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void startGame()
+    {
+        SceneManager.LoadSceneAsync(1);
     }
 
     public void SoundVolume()
