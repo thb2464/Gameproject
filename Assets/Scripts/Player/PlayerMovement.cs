@@ -128,13 +128,15 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isGrounded()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer); ;
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, 
+            boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer); ;
         return raycastHit.collider != null;
     }
 
     private bool onWall()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer); ;
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, 
+            boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer); ;
         return raycastHit.collider != null;
     }
 
