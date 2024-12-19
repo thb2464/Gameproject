@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 289, y: -454}
+  m_AnchoredPosition: {x: 678, y: -444}
   m_SizeDelta: {x: 352.307, y: 84.413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &29765508
@@ -293,7 +293,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: "Quay l\u1EA1i"
 --- !u!222 &29765512
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -337,8 +337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.24585, y: -47.792}
-  m_SizeDelta: {x: -1317.777, y: 3.991}
+  m_AnchoredPosition: {x: 54.1261, y: -47.791992}
+  m_SizeDelta: {x: -376.081, y: 3.991}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170539900
 MonoBehaviour:
@@ -429,7 +429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00002861, y: 341.22}
+  m_AnchoredPosition: {x: -0.00002861, y: 309}
   m_SizeDelta: {x: 853.135, y: 140.395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256516586
@@ -495,7 +495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Key Control
+  m_Text: "\u0110i\u1EC1u Khi\u1EC3n"
 --- !u!222 &256516589
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -885,7 +885,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Attack: J'
+  m_Text: "T\u1EA5n C\xF4ng: J"
 --- !u!222 &534759518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Move Right: D'
+  m_Text: "Qua Ph\u1EA3i: D"
 --- !u!222 &802510347
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1316,8 +1316,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.612, y: -224}
-  m_SizeDelta: {x: 573.629, y: 162.558}
+  m_AnchoredPosition: {x: 18.10791, y: -221.51295}
+  m_SizeDelta: {x: 475.349, y: 140.038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101034700
 MonoBehaviour:
@@ -1438,7 +1438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: "Tho\xE1t"
 --- !u!222 &1101034704
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1641,7 +1641,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Pause: ESC'
+  m_Text: "T\u1EA1m Ng\u1EEBng: ESC"
 --- !u!222 &1145721648
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2146,8 +2146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000034332, y: 126}
-  m_SizeDelta: {x: 573.629, y: 162.558}
+  m_AnchoredPosition: {x: 6, y: 80}
+  m_SizeDelta: {x: 475.349, y: 140.038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1375865466
 MonoBehaviour:
@@ -2268,7 +2268,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Game
+  m_Text: "Ch\u01A1i"
 --- !u!222 &1375865470
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2473,7 +2473,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Jump: Space'
+  m_Text: "Nh\u1EA3y: Space"
 --- !u!222 &1700152551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2797,7 +2797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Move Left: A'
+  m_Text: "Qua Tr\xE1i: A"
 --- !u!222 &2029223512
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2843,8 +2843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -49}
-  m_SizeDelta: {x: 573.629, y: 162.558}
+  m_AnchoredPosition: {x: 5.9999123, y: -70.75596}
+  m_SizeDelta: {x: 475.349, y: 140.038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143890403
 MonoBehaviour:
@@ -2977,7 +2977,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Control
+  m_Text: "\u0110i\u1EC1u Khi\u1EC3n"
 --- !u!222 &2143890407
 CanvasRenderer:
   m_ObjectHideFlags: 0

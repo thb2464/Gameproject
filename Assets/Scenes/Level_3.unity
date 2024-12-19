@@ -770,7 +770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Music
+  m_Text: "Nh\u1EA1c"
 --- !u!222 &45589287
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2309,7 +2309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SOUND
+  m_Text: "\xC2m Thanh"
 --- !u!222 &191663890
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6818,8 +6818,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13, y: 314}
-  m_SizeDelta: {x: 716.825, y: 220.397}
+  m_AnchoredPosition: {x: -7.79, y: 279.757}
+  m_SizeDelta: {x: 817.109, y: 151.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653118046
 MonoBehaviour:
@@ -6884,7 +6884,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Paused
+  m_Text: "T\u1EA1m D\u1EEBng"
 --- !u!222 &653118049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8064,7 +8064,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESUME
+  m_Text: "Ch\u01A1i L\u1EA1i"
 --- !u!222 &710863972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8297,8 +8297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015259, y: 248}
-  m_SizeDelta: {x: 716.825, y: 220.397}
+  m_AnchoredPosition: {x: -14.675, y: 216.202}
+  m_SizeDelta: {x: 853.799, y: 156.802}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717752914
 MonoBehaviour:
@@ -8363,7 +8363,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: YOU DIED
+  m_Text: "Th\u1EA5t B\u1EA1i"
 --- !u!222 &717752917
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10742,7 +10742,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MAIN MENU
+  m_Text: MENU
 --- !u!222 &883838283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11056,7 +11056,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BACK TO MENU
+  m_Text: MENU
 --- !u!222 &901592867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21787,7 +21787,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: "Tho\xE1t"
 --- !u!222 &1762041687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22909,7 +22909,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: "Tho\xE1t"
 --- !u!222 &1838780772
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23139,7 +23139,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESTART
+  m_Text: "Ch\u01A1i L\u1EA1i"
 --- !u!222 &1851868128
 CanvasRenderer:
   m_ObjectHideFlags: 0
